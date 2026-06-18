@@ -1,0 +1,9 @@
+# Обучение трансформеров в Colab (GPU). torch — из среды Colab.
+torch
+transformers>=4.44
+sentence-transformers>=3.0
+peft>=0.12
+accelerate>=0.33
+datasets>=2.20
+optuna>=3.6
+scikit-learn==1.9.0

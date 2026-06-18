@@ -1,0 +1,32 @@
+TF-IDF baseline (dev)
+macro-F1: 0.8108
+
+               precision    recall  f1-score   support
+
+        spine      0.895     0.862     0.878       138
+       joints      0.859     0.965     0.909        57
+       cardio      0.716     0.723     0.720        94
+    metabolic      0.918     0.857     0.887       105
+  respiratory      0.810     0.630     0.708        27
+neuro_balance      0.853     0.830     0.841       147
+core_visceral      0.896     0.902     0.899       163
+        acute      0.645     0.800     0.714        50
+         none      0.735     0.746     0.741        67
+
+     accuracy                          0.835       848
+    macro avg      0.814     0.813     0.811       848
+ weighted avg      0.839     0.835     0.835       848
+
+
+Confusion matrix (true \ pred):
+
+true\pred        spine  joints  cardio  metabo  respir  neuro_  core_v   acute    none
+spine              119       2       6       0       0       8       2       1       0
+joints               2      55       0       0       0       0       0       0       0
+cardio               0       2      68       2       3      11       5       2       1
+metabo               0       1       6      90       0       1       4       2       1
+respir               1       0       1       0      17       0       2       6       0
+neuro_               7       2       8       1       1     122       2       1       3
+core_v               4       0       4       2       0       1     147       2       3
+acute                0       0       0       0       0       0       0      40      10
+none                 0       2       2       3       0       0       2       8      50
